@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:UltraCalc"
+             x:Class="UltraCalc.MainPage">
+
+  
+
+    
+    
+    <Grid x:Name="Panel" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+            <RowDefinition Height="*"  />
+            <RowDefinition Height="*"  />
+              
+            <RowDefinition Height="*"  />
+            <RowDefinition Height="*"  />
+            <RowDefinition Height="*"  />
+                <RowDefinition Height="*"  />
+                <RowDefinition Height="*"  />
+                <RowDefinition Height="*"  />
+                <RowDefinition Height="*"  />
+            </Grid.RowDefinitions>
+
+        <!--<ListView x:Name="lw"  Grid.Column="0"  Grid.Row="0"   Grid.ColumnSpan="4"  Grid.RowSpan="2"
+                  SelectionMode="None">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell >
+                        <Label Text="{Binding ListRows}" HorizontalTextAlignment="End" VerticalTextAlignment="End"      BackgroundColor="#a5d6a7"  TextColor="Black" FontSize="Large"    />
+                    </ViewCell >
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>-->
+
+        <ScrollView x:Name="SV"  Grid.Column="0"  Grid.Row="0"   Grid.ColumnSpan="4"  Grid.RowSpan="2" >
+            <Label x:Name="rows"   HorizontalTextAlignment="End" VerticalTextAlignment="End"      BackgroundColor="#a5d6a7"  TextColor="Black" FontSize="Large"    />
+        </ScrollView>
+
+        <Label x:Name="exp"  Grid.Column="0"   Grid.Row="2" Grid.ColumnSpan="4"  HorizontalTextAlignment="End" VerticalTextAlignment="Center" BackgroundColor="Azure" FontSize="Large"   />
+
+        <Label x:Name="result"  Grid.Column="0"  Grid.Row="3"   Grid.ColumnSpan="4"  HorizontalTextAlignment="End" VerticalTextAlignment="Center" BackgroundColor="Azure" FontSize="Large"   />
+            <Button  ClassId="" Grid.Column="0"  Grid.Row="4" Text = "C" FontSize="Large"     Clicked="Btn_C"                  />
+            <Button  ClassId="" Grid.Column="1"  Grid.Row="4" Text = "X" FontSize="Large"    Clicked="Btn_X"                 />
+            <Button  ClassId="percent" Grid.Column="2"  Grid.Row="4" Text = "%" FontSize="Large"     Clicked="Btn_Clicked"                 />
+            <Button  ClassId="func" Grid.Column="3"  Grid.Row="4" Text = "/" FontSize="Large"     Clicked="Btn_Clicked"                 />
+
+            <Button ClassId="number" Grid.Column="0"  Grid.Row="5" Text = "7" FontSize="Large"     Clicked="Btn_Clicked"                 />
+            <Button ClassId="number" Grid.Column="1"  Grid.Row="5" Text = "8" FontSize="Large"     Clicked="Btn_Clicked"                 />
+            <Button ClassId="number" Grid.Column="2"  Grid.Row="5" Text = "9" FontSize="Large"     Clicked="Btn_Clicked"                 />
+            <Button ClassId="func"   Grid.Column="3"  Grid.Row="5" Text = "*" FontSize="Large"     Clicked="Btn_Clicked"                 />
+
+            <Button ClassId="number" Grid.Column="0"  Grid.Row="6" Text = "4" FontSize="Large"     Clicked="Btn_Clicked"                 />
+            <Button ClassId="number" Grid.Column="1"  Grid.Row="6" Text = "5" FontSize="Large"     Clicked="Btn_Clicked"                 />
+            <Button ClassId="number" Grid.Column="2"  Grid.Row="6" Text = "6" FontSize="Large"     Clicked="Btn_Clicked"                 />
+            <Button ClassId="func"   Grid.Column="3"  Grid.Row="6" Text = "-" FontSize="Large"     Clicked="Btn_Clicked"                 />
+
+            <Button ClassId="number" Grid.Column="0"  Grid.Row="7" Text = "1" FontSize="Large"     Clicked="Btn_Clicked"                 />
+            <Button ClassId="number" Grid.Column="1"  Grid.Row="7" Text = "2" FontSize="Large"     Clicked="Btn_Clicked"                 />
+            <Button ClassId="number" Grid.Column="2"  Grid.Row="7" Text = "3" FontSize="Large"     Clicked="Btn_Clicked"                 />
+            <Button ClassId="func"   Grid.Column="3"  Grid.Row="7" Text = "+" FontSize="Large"     Clicked="Btn_Clicked"                 />
+
+            <Button ClassId=""  Grid.Column="0"  Grid.Row="8" Text = "^" FontSize="Large"   Clicked="Btn_Clicked"                 />
+            <Button ClassId="number" Grid.Column="1"  Grid.Row="8" Text = "0" FontSize="Large"     Clicked="Btn_Clicked"                 />
+            <Button ClassId="dot" Grid.Column="2"  Grid.Row="8" Text = "." FontSize="Large"     Clicked="Btn_Clicked"                 />
+            <Button ClassId="" Grid.Column="3"  Grid.Row="8" Text = "=" FontSize="Large"     Clicked="Btn_equal"                 />
+
+
+
+    </Grid>
+
+
+   
+
+</ContentPage>
