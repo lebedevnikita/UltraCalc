@@ -32,6 +32,7 @@ namespace UltraCalc
 
 
 
+
         public MainPage()
         {
 
