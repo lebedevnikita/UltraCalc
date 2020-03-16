@@ -14,6 +14,7 @@ namespace UltraCalc
 
 
         
+
         Mathos.Parser.MathParser parser = new Mathos.Parser.MathParser();
         public string expr_show = ""; /*переменная для отображения введенных данных*/
         public string expr_show_nakoplenye = ""; /*переменная для отображения введенных данных*/
