@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UltraCalc.iOS", "UltraCalc\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UltraCalc.UWP", "UltraCalc\UltraCalc.UWP\UltraCalc.UWP.csproj", "{008F62C0-3B0D-467E-9224-3B2137650CD4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UltraCalc", "UltraCalc\UltraCalc\UltraCalc.csproj", "{9CA9E704-660F-4C83-ACE0-7294BC8E774A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UltraCalc", "UltraCalc\UltraCalc\UltraCalc.csproj", "{9CA9E704-660F-4C83-ACE0-7294BC8E774A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
