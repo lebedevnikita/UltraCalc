@@ -57,8 +57,18 @@ namespace UltraCalc
 
         private async void Btn_Clicked(object sender, EventArgs e)
         {
-          //776 DisplayAlert("tyu", Panel.Height.ToString(), "Ok");
+            //776 DisplayAlert("tyu", Panel.Height.ToString(), "Ok");
             Button button = (Button)sender;
+
+            if (button.ClassId=="1") { 
+            await DisplayAlert("2", "11111111111", "Ok");
+                }
+            if (button == button.FindByName("C"))
+            {
+                await DisplayAlert("2", "CCCCCCC", "Ok");
+            }
+
+
 
 
             if (button.ClassId == "number" || button.ClassId == "dot" || button.ClassId == "percent")
@@ -81,7 +91,7 @@ namespace UltraCalc
             if (button.Text == "%" & last_btn_classid== "number")
             {
                 
-                //await DisplayAlert("2", last_number, "Ok");
+                
 
                 // expr_calc = expr_calc + "/100*("+ expr_calc.Remove(expr_calc.Length- last_number.Length, last_number.Length ) + ")";
                 expr_calc = expr_calc.Remove(expr_calc.Length - last_number.Length, last_number.Length)

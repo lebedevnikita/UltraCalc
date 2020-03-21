@@ -47,8 +47,10 @@
         <Label x:Name="exp"  Grid.Column="0"   Grid.Row="2" Grid.ColumnSpan="4"  HorizontalTextAlignment="End" VerticalTextAlignment="Center" BackgroundColor="Azure" FontSize="Large"   />
 
         <Label x:Name="result"  Grid.Column="0"  Grid.Row="3"   Grid.ColumnSpan="4"  HorizontalTextAlignment="End" VerticalTextAlignment="Center" BackgroundColor="Azure" FontSize="Large"   />
-            <Button  ClassId="" Grid.Column="0"  Grid.Row="4" Text = "C" FontSize="Large"     Clicked="Btn_C"                  />
-            <Button  ClassId="" Grid.Column="1"  Grid.Row="4" Text = "X" FontSize="Large"    Clicked="Btn_X"                 />
+        <!--<Button Image="download_5100091.png"  HorizontalOptions="Center" VerticalOptions="CenterAndExpand" ClassId="" Grid.Column="0"  Grid.Row="4"   Text = "C" FontSize="Large"  Clicked="Btn_C"    />-->
+        <ImageButton x:Name="С"   Source="download_5100091.png" ClassId="" Grid.Column="0"  Grid.Row="4"     Clicked="Btn_C"                  />
+
+        <Button  ClassId="" Grid.Column="1"  Grid.Row="4" Text = "X" FontSize="Large"    Clicked="Btn_X"                 />
             <Button  ClassId="percent" Grid.Column="2"  Grid.Row="4" Text = "%" FontSize="Large"     Clicked="Btn_Clicked"                 />
             <Button  ClassId="func" Grid.Column="3"  Grid.Row="4" Text = "/" FontSize="Large"     Clicked="Btn_Clicked"                 />
 
